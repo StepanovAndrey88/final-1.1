@@ -1,0 +1,40 @@
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        // Исходный массив моделей
+        string[] initialArray = { "Mercedes-Benz", "BMW", "Audi", "Volkswagen", "Toyota", "Honda", "Hyundai", "Ford", "Chevrolet", "Nissan" };
+
+        // Подсчитываем количество строк, длина которых не превышает 3 символа
+        int count = 0;
+        for (int i = 0; i < initialArray.Length; i++)
+        {
+            if (initialArray[i].Length <= 3)
+            {
+                count++;
+            }
+        }
+
+        // Создаем новый массив для хранения отфильтрованных строк
+        string[] filteredArray = new string[count];
+
+        // Заполняем новый массив отфильтрованными строками
+        int j = 0;
+        for (int i = 0; i < initialArray.Length; i++)
+        {
+            if (initialArray[i].Length <= 3)
+            {
+                filteredArray[j] = initialArray[i];
+                j++;
+            }
+        }
+
+        // Выводим отфильтрованный массив
+        for (int i = 0; i < filteredArray.Length; i++)
+        {
+            Console.WriteLine(filteredArray[i]);
+        }
+    }
+}
