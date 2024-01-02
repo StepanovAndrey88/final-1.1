@@ -12,8 +12,3 @@
 Написать программу, решающую поставленную задачу.
 Использовать контроль версий в работе над этим небольшим проектом.
 Файлы и описание
-
-Final_control_work_of_the_main_block.jpeg - блок-схема алгоритма (.jpeg).
-Final_control_work_of_the_main_block.drawio - блок-схема алгоритма (.drawio).
-Task.py - код решения задачи (.py).
-README.md - readme файл.
